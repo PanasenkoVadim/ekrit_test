@@ -1,0 +1,141 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  padding: 36px 0 35px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__search {
+    color: $purple;
+    padding-left: 32px;
+    font-weight: 600;
+    background: url("../images/search.svg") no-repeat left center;
+  }
+}
+
+.back {
+  padding: 40px 0 36px;
+  &__btn {
+    display: flex;
+    align-items: center;
+    color: $text-color1;
+    & img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.search {
+  &__title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 67px;
+    color: $text-color2;
+  }
+  &__form {
+    padding: 40px 0 97px;
+  }
+  &__form-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__form-input {
+    width: 100%;
+    padding: 26px 291px 26px 40px;
+    border: 1px solid #dacbff;
+    border-radius: 100px;
+    outline: none;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-color2;
+  }
+  &__form-btn {
+    padding: 26px 85.5px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    background-color: $purple;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #dacbff;
+    border-radius: 100px;
+  }
+  &__savetofavorite {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: $text-color1;
+    line-height: 22px;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  &__about {
+    display: flex;
+    gap: 5px 20px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: $text-color2;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    &-link {
+      font-weight: 700;
+      color: $purple;
+    }
+
+    &-item:nth-child(2) > span {
+      margin-right: 6px;
+    }
+  }
+}
+
+.search__result {
+  padding: 20px 0 200px;
+  border-top: 1px solid #dacbff;
+  display: flex;
+  justify-content: center;
+  gap: 20px 40px;
+  flex-wrap: wrap;
+
+  &-img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    object-fit: cover;
+  }
+  &-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color2;
+    margin-bottom: 5px;
+  }
+  &-discription {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    color: $text-color1;
+  }
+}
+.footer {
+  &__copyrights {
+    padding: 17px 0 14px;
+    font-weight: 500;
+    line-height: 14px;
+    font-size: 10px;
+    color: $text-color1;
+  }
+}
+
+@import "media";

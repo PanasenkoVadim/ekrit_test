@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.header {
+  flex: 0 0 auto;
+}
+.main {
+  flex: 1 0 auto;
+  background-color: #fcfcfc;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1208px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+}
